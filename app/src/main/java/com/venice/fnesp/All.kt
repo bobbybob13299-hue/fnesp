@@ -18,7 +18,6 @@ import android.view.View
 import android.view.ViewGroup
 import android.view.WindowManager
 import android.widget.*
-import androidx.appcompat.app.AppCompatActivity
 import java.io.File
 import java.nio.ByteBuffer
 import java.nio.ByteOrder
@@ -415,7 +414,7 @@ class OverlayService : Service() {
     }
 }
 
-class MainActivity : AppCompatActivity() {
+class MainActivity : Activity() {
     private lateinit var prefs: Prefs
     private val REQ = 1001
 
